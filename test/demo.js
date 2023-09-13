@@ -27,16 +27,9 @@ describe("test", function () {
             [hello]
         );
         
-        // const result = await test.test2(input);
-        // console.log(result);
-        // const t = await test.estimateGas.balanceOf("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266");
-        //         console.log(t)
-
-        let tx = await test.estimateGas.balanceOf("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266")
+        let tx = await test.test2.staticCall(input)
         console.log(tx);
-        // const res = await tx.wait();
-        // console.log(res);
-
+        
         // 0x78047bbc26a22703a1ac4ac390de4c489d65e4011ccf410301664007487ad84c
     })
 })
